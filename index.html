@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<div id="target" />
+		<script>
+			var $ = require('jquery');
+			var ipc = require('ipc');
+
+			ipc.on('line-from-file', function(arg) {
+				$('#target').append($('<p>').text(arg));
+			});
+		</script>
+	</body>
+</html>
