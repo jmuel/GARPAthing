@@ -9,6 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^2.9.27",
+    "elementtree": "^0.1.6",
+    "encoding": "^0.1.11",
+    "https": "^1.0.0",
+    "lodash": "^3.9.3",
     "tail": "^0.4.0"
   }
 }
