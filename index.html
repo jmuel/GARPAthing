@@ -9,7 +9,10 @@
 			var ipc = require('ipc');
 
 			ipc.on('line-from-file', function(arg) {
-				$('#target').append($('<p>').text(arg));
+				var newLine = $('<p>');
+				newLine.append($('<span>').text(arg.system));
+				newLine.append($('<span>').text(arg.characters.join(',')));
+				$('#target').append(newLine);
 			});
 		</script>
 	</body>
